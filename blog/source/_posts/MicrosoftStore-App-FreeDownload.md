@@ -25,7 +25,6 @@ tag : 科技
 
 如果你找不到分享按钮,您可以尝试升级Microsoft Store App
 
-![wd](/_post.res/MicrosoftStore-App-FreeDownload/pic01.png)
 
 复制完之后,打开[微软商店应用解析](https://store.rg-adguard.net/),把你刚刚复制的内容粘贴。
 
