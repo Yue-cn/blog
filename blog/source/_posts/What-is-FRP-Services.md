@@ -1,6 +1,6 @@
 ---
-title : [OpenFRP] 什么是系统服务模式？
-date : 2021-1-2
+title : 「OpenFRP」什么是系统服务模式？
+date : 2023-1-10
 tag : 科技
 ---
 
