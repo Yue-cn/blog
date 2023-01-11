@@ -7,7 +7,7 @@
     <title>OBS Media Core</title>
 </head>
 <body>
-    <video autoplay loop></video>
+    <video autoplay controls loop></video>
     <style>
         body,html{
             width: 100%;
@@ -23,15 +23,18 @@
     </style>
     <script>
         (function(){
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET',document.location.search.split('=')[1],true);
-            xhr.responseType = 'blob';
-            xhr.onload = (e) => {
-                if (xhr.status == 200){
-                    document.querySelector("video").src = URL.createObjectURL(xhr.response);
-                }
-            };
-            xhr.send();
+            const video = document.querySelector("video");
+            video.addEventListener('onclick',()=>{
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET',document.location.search.split('=')[1],true);
+                xhr.responseType = 'blob';
+                xhr.onload = (e) => {
+                    if (xhr.status == 200){
+                        video.src = URL.createObjectURL(xhr.response);
+                    }
+                };
+                xhr.send();
+            });
         })();
     </script>
 </body>
