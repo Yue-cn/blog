@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBS Media Core</title>
+</head>
+<body>
+    <video autoplay loop></video>
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        video{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script>
+        (function(){
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET',document.location.search.split('=')[1],true);
+            xhr.responseType = 'blob';
+            xhr.onload = (e) => {
+                if (xhr.status == 200){
+                    document.querySelector("video").src = URL.createObjectURL(xhr.response);
+                }
+            };
+            xhr.send();
+        })();
+    </script>
+</body>
+</html>
