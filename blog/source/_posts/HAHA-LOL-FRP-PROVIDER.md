@@ -1,3 +1,10 @@
+---
+title : 逐步发掘「 TXT数据传输与500M上行 」的真相
+date : 2023-7-29
+tag : 科技
+---
+<!-- more -->
+
 <center><h1>宇宙免责声明</h1><iframe src="//player.bilibili.com/player.html?aid=274055120&bvid=BV1Cc411F7pW&cid=1214857081&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></center>
 <br/>
 
